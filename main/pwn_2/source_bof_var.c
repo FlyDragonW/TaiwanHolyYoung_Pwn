@@ -11,7 +11,7 @@ int main() {
     read(0, name, 100);
 
     if(key == 0xfaceb00c){
-        puts("flag{0v3rf1oW!}");
+        puts("FLAG{0v3rf1oW!}");
     }
     return 0;
 }
