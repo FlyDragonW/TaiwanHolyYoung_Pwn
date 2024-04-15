@@ -8,4 +8,4 @@ WORKDIR /chal
 
 COPY ./src /chal
 
-CMD ["socat", "TCP-LISTEN:10001,fork", "EXEC:'timeout 60 ./bof_var'"]
+CMD ["socat", "TCP-LISTEN:10003,fork", "EXEC:'timeout 60 ./ret2sc'"]

@@ -8,7 +8,7 @@ print(f'Guess a number between 0 and {upper_bound}!')
 while True:
 	data = int(input())
 	if(data == ans):
-		print("FLAG{ppc1}")
+		print("FLAG{pwwwwntooool!}")
 	elif(data < ans):
 		print("Higher!")
 	elif(data > ans):

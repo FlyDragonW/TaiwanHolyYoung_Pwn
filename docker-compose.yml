@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  pwn-1:
+    build: ./main/pwn_1
+    ports:
+      - "10000:10000"
+
+  pwn-2:
+    build: ./main/pwn_2
+    ports:
+      - "10002:10002"
+  
+  pwn-3:
+    build: ./main/pwn_3
+    ports:
+      - "10003:10003"
+
+  pwn-4:
+    build: ./main/pwn_4
+    ports:
+      - "10004:10004"
+  
+  pwn-5:
+    build: ./main/pwn_5
+    ports:
+      - "10005:10005"
+
+  pwn-6:
+    build: ./main/pwn_6
+    ports:
+      - "10006:10006"
+
