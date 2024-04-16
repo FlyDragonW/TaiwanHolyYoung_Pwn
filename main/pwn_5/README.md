@@ -12,6 +12,7 @@ Author: FlyDragon
 ```
 ## File
 - ret2libc.c
+- libc.so.6
 ## Flag
 ```
 FLAG{us3fu1LBRY}

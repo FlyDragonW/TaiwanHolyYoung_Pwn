@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//gcc -o bof_var bof_var.c -fno-stack-protector
+//gcc -o chal bof_var.c -fno-stack-protector
 
 int main() {
     setvbuf(stdout, NULL, _IONBF, 0);

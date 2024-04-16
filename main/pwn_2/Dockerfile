@@ -1,11 +1,10 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN apt-get update && \
-    apt-get install -y socat
+    DEBAIN_FRONTEND=noninteractive apt-get install -qy gcc gcc-multilib xinetd
 
-RUN mkdir -p /chal
-WORKDIR /chal
+RUN useradd -m chal
+RUN chown -R root:root /home/chal
+RUN chmod -R 755 /home/chal
 
-COPY ./src /chal
-
-CMD ["socat", "TCP-LISTEN:10001,fork", "EXEC:'timeout 60 ./bof_var'"]
+CMD ["/usr/sbin/xinetd", "-dontfork"]

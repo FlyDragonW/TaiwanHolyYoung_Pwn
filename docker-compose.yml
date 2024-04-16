@@ -8,26 +8,40 @@ services:
 
   pwn-2:
     build: ./main/pwn_2
+    volumes:
+      - ./main/pwn_2/src:/home/chal:ro
+      - ./main/pwn_2/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "10001:10001"
+
+  pwn-3:
+    build: ./main/pwn_3
+    volumes:
+      - ./main/pwn_3/src:/home/chal:ro
+      - ./main/pwn_3/xinetd:/etc/xinetd.d/chal:ro
     ports:
       - "10002:10002"
   
-  pwn-3:
-    build: ./main/pwn_3
-    ports:
-      - "10003:10003"
-
   pwn-4:
     build: ./main/pwn_4
+    volumes:
+      - ./main/pwn_4/src:/home/chal:ro
+      - ./main/pwn_4/xinetd:/etc/xinetd.d/chal:ro
     ports:
-      - "10004:10004"
+      - "10003:10003"
   
   pwn-5:
     build: ./main/pwn_5
+    volumes:
+      - ./main/pwn_5/src:/home/chal:ro
+      - ./main/pwn_5/xinetd:/etc/xinetd.d/chal:ro
     ports:
-      - "10005:10005"
+      - "10004:10004"
 
   pwn-6:
     build: ./main/pwn_6
+    volumes:
+      - ./main/pwn_6/src:/home/chal:ro
+      - ./main/pwn_6/xinetd:/etc/xinetd.d/chal:ro
     ports:
-      - "10006:10006"
-
+      - "10005:10005"
