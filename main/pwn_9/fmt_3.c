@@ -6,6 +6,8 @@ char key = 'a';
 
 int main()
 {
+    setvbuf( stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
     printf("Address of key: %p\n", &key);
     char buf[40];
     scanf("%s", buf);
