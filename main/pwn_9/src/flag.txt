@@ -1,0 +1,1 @@
+FLAG{wr1te_anything!}

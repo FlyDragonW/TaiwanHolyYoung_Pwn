@@ -45,3 +45,27 @@ services:
       - ./main/pwn_6/xinetd:/etc/xinetd.d/chal:ro
     ports:
       - "10005:10005"
+
+  pwn-7:
+    build: ./main/pwn_7
+    volumes:
+      - ./main/pwn_7/src:/home/chal:ro
+      - ./main/pwn_7/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "10006:10006"
+
+  pwn-8:
+    build: ./main/pwn_8
+    volumes:
+      - ./main/pwn_8/src:/home/chal:ro
+      - ./main/pwn_8/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "10007:10007"
+
+  pwn-9:
+    build: ./main/pwn_9
+    volumes:
+      - ./main/pwn_9/src:/home/chal:ro
+      - ./main/pwn_9/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "10008:10008"
