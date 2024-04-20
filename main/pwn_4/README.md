@@ -12,6 +12,7 @@ Author: FlyDragon
 ```
 ## File
 - ret2sc.c
+- ret2sc
 ## Flag
 ```
 FLAG{sh311cod3}
