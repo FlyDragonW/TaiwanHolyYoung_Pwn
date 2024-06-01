@@ -69,3 +69,11 @@ services:
       - ./main/pwn_9/xinetd:/etc/xinetd.d/chal:ro
     ports:
       - "10008:10008"
+
+  pwn-a:
+    build: ./main/pwn_a
+    volumes:
+      - ./main/pwn_a/src:/home/chal:ro
+      - ./main/pwn_a/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "10009:10009"
