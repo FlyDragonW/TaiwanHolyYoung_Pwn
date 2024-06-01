@@ -10,5 +10,5 @@ docker-compose up -d
 
 ## Portinfo
 ```
-10000 ~ 10008 : Main
+10000 ~ 10009 : Main
 ```
