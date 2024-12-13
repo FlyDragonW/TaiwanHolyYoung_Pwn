@@ -1,20 +1,20 @@
 ## Challenge Name
 ```
-0x02-CrashMe
+0x01-ClassicGame
 ```
 ## Challenge
 ```
-Crash to get flag.  
+Win 1000 rounds in 10 sec for flag.  
 
-`nc 107.167.182.200 20001`  
+`nc 107.167.182.200 20000`  
 
 Author: FlyDragon
 ```
 ## File
-- bof_var.c
+- (None)
 ## Flag
 ```
-FLAG{Cr4sH_2_W1n}
+FLAG{la7e_thr0w}
 ```
 ## Solve
 ```

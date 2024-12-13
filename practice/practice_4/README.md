@@ -1,20 +1,20 @@
 ## Challenge Name
 ```
-0x02-CrashMe
+0x04-Seccomp
 ```
 ## Challenge
 ```
-Crash to get flag.  
+Only Open Read Write!  
 
-`nc 107.167.182.200 20001`  
+`nc 107.167.182.200 20003`  
 
 Author: FlyDragon
 ```
 ## File
-- bof_var.c
+- orw.c
 ## Flag
 ```
-FLAG{Cr4sH_2_W1n}
+FLAG{Fl4g_w1tH0u7_$h3Il}
 ```
 ## Solve
 ```

@@ -77,3 +77,40 @@ services:
       - ./main/pwn_a/xinetd:/etc/xinetd.d/chal:ro
     ports:
       - "10009:10009"
+
+  practice-1:
+    build: ./practice/practice_1
+    ports:
+      - "20000:20000"
+
+  practice-2:
+    build: ./practice/practice_2
+    volumes:
+      - ./practice/practice_2/src:/home/chal:ro
+      - ./practice/practice_2/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "20001:20001"
+  
+  practice-3:
+    build: ./practice/practice_3
+    volumes:
+      - ./practice/practice_3/src:/home/chal:ro
+      - ./practice/practice_3/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "20002:20002"
+
+  practice-4:
+    build: ./practice/practice_4
+    volumes:
+      - ./practice/practice_4/src:/home/chal:ro
+      - ./practice/practice_4/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "20003:20003"
+
+  practice-5:
+    build: ./practice/practice_5
+    volumes:
+      - ./practice/practice_5/src:/home/chal:ro
+      - ./practice/practice_5/xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - "20004:20004"
