@@ -12,7 +12,7 @@ void vuln() {
     printf("What do you want to say:");
     gets(buf);
     printf(buf);
-    printf("Do you still have nything to say:");
+    printf("Do you still have anything to say:");
     gets(buf);
     printf("bye~");
 }
